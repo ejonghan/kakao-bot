@@ -18,7 +18,9 @@ function response(room, msg, sender, isGroup, replier) {
   var body_temperature = data[25].split("체감")[1];
   var munji = data[42].trim().split(" ");
   var chomunji = data[52].trim().split(" ");
-  var results = [];
+
+  var results = []; // 출력해줄 메시지 리스트
+
   results[0] = "☆ 어제보다 " + descript_tempa2 + "요! ☆";
   results[1] =
     "현재온도 : " + Temperature + " / 체감온도 : " + body_temperature;
