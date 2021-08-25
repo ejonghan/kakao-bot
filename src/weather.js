@@ -1,6 +1,6 @@
-function response(room, msg, sender, isGroup, replier) {
+function weather(region) {
   var data = Utils.getWebText(
-    "https://m.search.naver.com/search.naver?query=" + msg + "%20날씨"
+    "https://m.search.naver.com/search.naver?query=" + region + "%20날씨"
   );
 
   data = data.replace(/<[^>]+>/g, ""); //태그 삭제
@@ -32,12 +32,12 @@ function response(room, msg, sender, isGroup, replier) {
 
   var result =
     "[ " +
-    msg +
+    region +
     " 날씨 정보] " +
     "  《" +
     descript_state +
     "》\n" +
     results.join("\n");
 
-  replier.reply(result);
+  replier.reply("카톡 방이름", result);
 }

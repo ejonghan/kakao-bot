@@ -1,4 +1,4 @@
-function response(room, msg, sender, isGroup, replier) {
+function lotto() {
   var data = Utils.getWebText(
     "https://m.search.naver.com/search.naver?query=로또"
   );
@@ -20,9 +20,9 @@ function response(room, msg, sender, isGroup, replier) {
 
   var result =
     "[이번주 로또 번호]\n\n" +
-    "☆☆☆☆☆☆☆☆☆☆☆☆☆\n" +
+    "☆☆☆☆☆☆☆☆☆☆☆\n" +
     lotto_Num.join("  ") +
-    "\n☆☆☆☆☆☆☆☆☆☆☆☆☆";
+    "\n☆☆☆☆☆☆☆☆☆☆☆";
 
-  replier.reply(result);
+  replier.reply("카톡 방이름", result);
 }
