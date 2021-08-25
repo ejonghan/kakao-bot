@@ -1,4 +1,4 @@
-function lotto() {
+function lotto(replier) {
   var data = Utils.getWebText(
     "https://m.search.naver.com/search.naver?query=로또"
   );
