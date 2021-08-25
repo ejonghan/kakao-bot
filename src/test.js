@@ -14,13 +14,26 @@ function response(
   }
 }
 
-/* 
-예약 메시지 전송방법 구상중 
+/*
 
-while(true){
+/예약 메시지 전송방법 구상중
+
+while (true) {
   let day = new Date();
-  if(day.getHours()==14&&day.getMinutes()==00&&day.getSeconds()==00){
-    replier.reply("blahblah")
+  if (
+    day.getHours() == 14 &&
+    day.getMinutes() == 00 &&
+    day.getSeconds() == 00
+  ) {
+    replier.reply("blahblah");
   }
+}
+
+/각 방에 뿌리기 
+
+var room_list = [...]
+
+for (var i = 0 ; i < room_list.length ; i++){
+  replier.reply(room_list[i], ...)
 }
 */
