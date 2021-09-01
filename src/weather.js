@@ -1,4 +1,4 @@
-function weather(region) {
+function weather(region, replier) {
   var data = Utils.getWebText(
     "https://m.search.naver.com/search.naver?query=" + region + "%20날씨"
   );
